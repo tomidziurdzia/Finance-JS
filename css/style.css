@@ -161,16 +161,17 @@ body {
 .user__menu ul {
   background-color: var(--blue);
   width: 100%;
-  max-width: 22.5rem;
+  max-width: 22rem;
   position: absolute;
   top: 6rem;
+  right: 3rem;
   border-radius: 10px;
 }
 
 .user__item a {
   color: var(--blanco);
   display: block;
-  height: 5rem;
+  height: 6rem;
   font-size: 1.5rem;
   cursor: pointer;
   border-bottom: 1px solid var(--blanco);
@@ -181,7 +182,7 @@ body {
   font-size: 1.7rem;
 }
 .active {
-  transform: translateY(-300px);
+  transform: translateY(-500px);
 }
 
 /* Fin User */
@@ -869,6 +870,15 @@ body {
   .header__user {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .user__menu ul {
+    max-width: none;
+    width: 90%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+  }
+
   .box__container {
     grid-template-columns: 1fr;
   }
@@ -1088,6 +1098,11 @@ body {
 /* FIN @media only screen and (min-width: 481px) and (max-width: 768px) */
 
 /* OTRAS MEDIAS QUERIES */
+@media only screen and (min-width: 769px) and (max-width: 1400px) {
+  .user__menu ul {
+    margin-top: 2rem;
+  }
+}
 
 @media only screen and (max-width: 1024px) {
   .table__container {
