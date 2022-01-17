@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance | Transacciones</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="container">
+    <!-- Header -->
+    <header>
+        <div class="header__container">
+            <!-- Titulo -->
+            <div class="header__title">
+                <a href="../index.html">
+                    <img src="../multimedia/favicon.png" alt="Logo principal de la marca">
+                    <h1>Finance</h1>
+                </a>
+            </div>
+            <!-- Fin Titulo -->
+            <!-- Barra de Navegacion -->
+            <div class="header__nav">
+                <input type="checkbox" id="menu">
+                <div class="div__label__menu">
+                    <label for="menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="32"
+                            height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <line x1="4" y1="6" x2="20" y2="6" />
+                            <line x1="4" y1="12" x2="20" y2="12" />
+                            <line x1="4" y1="18" x2="20" y2="18" />
+                        </svg>
+                    </label>
+
+                    <div class="footer__redes--label">
+                        <ul>
+                            <li>
+                                <a href="https://www.linkedin.com/in/tomas-dziurdzia-bb79b8179/" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        class="icon icon-tabler icon-tabler-brand-linkedin" width="32" height="32"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <rect x="4" y="4" width="16" height="16" rx="2" />
+                                        <line x1="8" y1="11" x2="8" y2="16" />
+                                        <line x1="8" y1="8" x2="8" y2="8.01" />
+                                        <line x1="12" y1="16" x2="12" y2="11" />
+                                        <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/tomidziurdzia" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        class="icon icon-tabler icon-tabler-brand-github" width="32" height="32"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path
+                                            d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/tomidziurdzia/" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        class="icon icon-tabler icon-tabler-brand-instagram" width="32" height="32"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <rect x="4" y="4" width="16" height="16" rx="4" />
+                                        <circle cx="12" cy="12" r="3" />
+                                        <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="header__ul">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="#inicio">Transacciones</a></li>
+                    <li><a href="../views/informes.html">Informes</a></li>
+                    <li><a href="../views/cuentas-categorias.html">Cuentas y Categorias</a></li>
+                </ul>
+            </div>
+            <!-- Fin Barra de Navegacion -->
+            <!-- Usuario -->
+            <div class="header__user">
+                <div class="user__name">
+                    <img src="../multimedia/imagenes/imagen-usuario.svg" alt="Imagen del Usuario">
+                    <p>Tomi Dziurdzia</p>
+                </div>
+                <input type="checkbox" id="menu__user">
+                <div class="div__label__user">
+                    <label for="menu__user">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-down"
+                            width="28" height="28" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <line x1="12" y1="5" x2="12" y2="19" />
+                            <line x1="18" y1="13" x2="12" y2="19" />
+                            <line x1="6" y1="13" x2="12" y2="19" />
+                        </svg>
+                    </label>
+                </div>
+                <ul class="user__ul">
+                    <li><a href="#">Configuracion</a></li>
+                    <li><a href="#">Privacidad</a></li>
+                    <li><a href="./login.html">Salir</a></li>
+                </ul>
+            </div>
+            <!-- Fin Usuario -->
+        </div>
+    </header>
+    <!-- Fin Header -->
+    <!-- Inicio Contenido Principal -->
+    <main>
+        <!-- Inicio Boxes con los saldos -->
+        <section>
+            <div class="box__container">
+                <div class="box__card">
+                    <div class="box__card__text">
+                        <p class="box__card--name">Saldo Inicial</p>
+                        <p class="box__card--number">$ 20.000</p>
+                    </div>
+                    <div class="box__card__icon inicial">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-wallet" width="44"
+                            height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M17 8v-3a1 1 0 0 0 -1 -1h-10a2 2 0 0 0 0 4h12a1 1 0 0 1 1 1v3m0 4v3a1 1 0 0 1 -1 1h-12a2 2 0 0 1 -2 -2v-12" />
+                            <path d="M20 12v4h-4a2 2 0 0 1 0 -4h4" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="box__card">
+                    <div class="box__card__text">
+                        <p class="box__card--name">Ingresos</p>
+                        <p class="box__card--number">$ 20.000</p>
+                    </div>
+                    <div class="box__card__icon ingresos">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-up" width="44"
+                            height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <line x1="12" y1="5" x2="12" y2="19" />
+                            <line x1="18" y1="11" x2="12" y2="5" />
+                            <line x1="6" y1="11" x2="12" y2="5" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="box__card">
+                    <div class="box__card__text">
+                        <p class="box__card--name">Egresos</p>
+                        <p class="box__card--number">$ 20.000</p>
+                    </div>
+                    <div class="box__card__icon egresos">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-down"
+                            width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <line x1="12" y1="5" x2="12" y2="19" />
+                            <line x1="18" y1="13" x2="12" y2="19" />
+                            <line x1="6" y1="13" x2="12" y2="19" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="box__card">
+                    <div class="box__card__text">
+                        <p class="box__card--name">Saldo Final</p>
+                        <p class="box__card--number">$ 20.000</p>
+                    </div>
+                    <div class="box__card__icon final">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cash" width="44"
+                            height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <rect x="7" y="9" width="14" height="10" rx="2" />
+                            <circle cx="14" cy="14" r="2" />
+                            <path d="M17 9v-2a2 2 0 0 0 -2 -2h-10a2 2 0 0 0 -2 2v6a2 2 0 0 0 2 2h2" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fin Boxes con los saldos -->
+        <!-- Inicio Filtro y Nueva Transaccion Btn -->
+        <div class="filtro-nueva__container">
+            <div class="filtro__container">
+                <a href="#">Filtros</a>
+            </div>
+
+            <div class="nueva__transaccion">
+                <a href="#">+ Nueva Transaccion</a>
+            </div>
+        </div>
+        <!-- Fin Filtro y Nueva Transaccion Btn -->
+        <!-- Inicio Tabla -->
+        <table class="table__container">
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Cuenta</th>
+                    <th>Categoria</th>
+                    <th>Descripcion</th>
+                    <th>Importe</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>05/01/2022</td>
+                    <td>Banco Galicia</td>
+                    <td>Sueldos</td>
+                    <td>Sueldo Enero</td>
+                    <td>$ 55.500</td>
+                    <td class="buttons__table">
+                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-eye"
+                                width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <circle cx="12" cy="12" r="2" />
+                                <path
+                                    d="M22 12c-2.667 4.667 -6 7 -10 7s-7.333 -2.333 -10 -7c2.667 -4.667 6 -7 10 -7s7.333 2.333 10 7" />
+                            </svg></a>
+                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil"
+                                width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4" />
+                                <line x1="13.5" y1="6.5" x2="17.5" y2="10.5" />
+                            </svg></a>
+                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-trash"
+                                width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <line x1="4" y1="7" x2="20" y2="7" />
+                                <line x1="10" y1="11" x2="10" y2="17" />
+                                <line x1="14" y1="11" x2="14" y2="17" />
+                                <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                                <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+                            </svg></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>08/01/2022</td>
+                    <td>Banco Galicia</td>
+                    <td>Alquiler</td>
+                    <td>Alquiler Enero</td>
+                    <td>$ - 31.500</td>
+                    <td class="buttons__table">
+                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-eye"
+                                width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <circle cx="12" cy="12" r="2" />
+                                <path
+                                    d="M22 12c-2.667 4.667 -6 7 -10 7s-7.333 -2.333 -10 -7c2.667 -4.667 6 -7 10 -7s7.333 2.333 10 7" />
+                            </svg></a>
+                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil"
+                                width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4" />
+                                <line x1="13.5" y1="6.5" x2="17.5" y2="10.5" />
+                            </svg></a>
+                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-trash"
+                                width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <line x1="4" y1="7" x2="20" y2="7" />
+                                <line x1="10" y1="11" x2="10" y2="17" />
+                                <line x1="14" y1="11" x2="14" y2="17" />
+                                <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                                <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+                            </svg></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>10/01/2022</td>
+                    <td>Brubank</td>
+                    <td>Servicios</td>
+                    <td>Internet</td>
+                    <td>$ - 3.500</td>
+                    <td class="buttons__table">
+                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-eye"
+                                width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <circle cx="12" cy="12" r="2" />
+                                <path
+                                    d="M22 12c-2.667 4.667 -6 7 -10 7s-7.333 -2.333 -10 -7c2.667 -4.667 6 -7 10 -7s7.333 2.333 10 7" />
+                            </svg></a>
+                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil"
+                                width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4" />
+                                <line x1="13.5" y1="6.5" x2="17.5" y2="10.5" />
+                            </svg></a>
+                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-trash"
+                                width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <line x1="4" y1="7" x2="20" y2="7" />
+                                <line x1="10" y1="11" x2="10" y2="17" />
+                                <line x1="14" y1="11" x2="14" y2="17" />
+                                <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                                <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+                            </svg></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>10/01/2022</td>
+                    <td>Banco Galicia</td>
+                    <td>Fondo Fima</td>
+                    <td>Rescate</td>
+                    <td>$ 5.500</td>
+                    <td class="buttons__table">
+                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-eye"
+                                width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <circle cx="12" cy="12" r="2" />
+                                <path
+                                    d="M22 12c-2.667 4.667 -6 7 -10 7s-7.333 -2.333 -10 -7c2.667 -4.667 6 -7 10 -7s7.333 2.333 10 7" />
+                            </svg></a>
+                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil"
+                                width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4" />
+                                <line x1="13.5" y1="6.5" x2="17.5" y2="10.5" />
+                            </svg></a>
+                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-trash"
+                                width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <line x1="4" y1="7" x2="20" y2="7" />
+                                <line x1="10" y1="11" x2="10" y2="17" />
+                                <line x1="14" y1="11" x2="14" y2="17" />
+                                <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                                <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+                            </svg></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>10/01/2022</td>
+                    <td>Efectivo</td>
+                    <td>Servicios</td>
+                    <td>Expensas</td>
+                    <td>$ - 5.900</td>
+                    <td class="buttons__table">
+                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-eye"
+                                width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <circle cx="12" cy="12" r="2" />
+                                <path
+                                    d="M22 12c-2.667 4.667 -6 7 -10 7s-7.333 -2.333 -10 -7c2.667 -4.667 6 -7 10 -7s7.333 2.333 10 7" />
+                            </svg></a>
+                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil"
+                                width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4" />
+                                <line x1="13.5" y1="6.5" x2="17.5" y2="10.5" />
+                            </svg></a>
+                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-trash"
+                                width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <line x1="4" y1="7" x2="20" y2="7" />
+                                <line x1="10" y1="11" x2="10" y2="17" />
+                                <line x1="14" y1="11" x2="14" y2="17" />
+                                <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                                <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+                            </svg></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>$ -</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>$ -</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>$ -</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- Fin Tabla -->
+        <!-- Inicio Paginacion -->
+        <div class="table__pags">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevrons-left" width="36"
+                    height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <polyline points="11 7 6 12 11 17" />
+                    <polyline points="17 7 12 12 17 17" />
+                </svg></a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="36"
+                    height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <polyline points="15 6 9 12 15 18" />
+                </svg></a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="36"
+                    height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <polyline points="9 6 15 12 9 18" />
+                </svg></a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevrons-right" width="36"
+                    height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <polyline points="7 7 12 12 7 17" />
+                    <polyline points="13 7 18 12 13 17" />
+                </svg></a>
+        </div>
+        <!-- Fin Paginacion -->
+        <!-- Inicio Footer -->
+        <footer class="footer__container">
+            <div class="footer__redes">
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/tomas-dziurdzia-bb79b8179/" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin"
+                                width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <rect x="4" y="4" width="16" height="16" rx="2" />
+                                <line x1="8" y1="11" x2="8" y2="16" />
+                                <line x1="8" y1="8" x2="8" y2="8.01" />
+                                <line x1="12" y1="16" x2="12" y2="11" />
+                                <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/tomidziurdzia" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github"
+                                width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/tomidziurdzia/" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram"
+                                width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <rect x="4" y="4" width="16" height="16" rx="4" />
+                                <circle cx="12" cy="12" r="3" />
+                                <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__datos">
+                <p>&copy; Copyright 2022 - Tomas Dziurdzia</p>
+                <p>Todos los derechos reservados</p>
+            </div>
+            <!-- Barra de navegacion -->
+            <div class="footer__nav">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="#inicio">Transacciones</a></li>
+                    <li><a href="./informes.html">Informes</a></li>
+                    <li><a href="./cuentas-categorias.html">Cuentas y Categorias</a></li>
+                </ul>
+            </div>
+        </footer>
+        <!-- Fin Footer -->
+        <a href="#" class="boton__mas container">+</a>
+    </main>
+</body>
+
+</html>

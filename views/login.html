@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance | Login</title>
+    <link rel="stylesheet" href="../css/app.css" class="css">
+    <link rel="shortcut icon" href="../multimedia/imagenes/favicon.png">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- Titulo -->
+    <header class="login__header">
+        <h1 class="header__title">¡Bienvenidos a Finance!</h1>
+    </header>
+
+    <!-- Imagen y Login -->
+    <section class="login__grid">
+        <!-- Contenedor Imagen y Frase -->
+        <div class="login__grafico">
+            <p class="login__text">¡ Lleva tus finanzas al siguiente nivel !</p>
+            <img class="login__img" src="../multimedia/imagenes/imagen-login.jpg" alt="Imagen de login de pagina web">
+        </div>
+        <!-- Contenedor Formulario -->
+        <div class="login__container">
+            <form class="login__form" action="../index.html">
+                <div class="login__campo">
+                    <label class="login__label" for="name"></label>
+                    <input class="login__input" id="name" name="name" type="text" required placeholder="Correo">
+                    <div>
+                        <div class="login__campo">
+                            <label class="login__label" for="password"></label>
+                            <input class="login__input" type="password" required placeholder="Contraseña">
+                        </div>
+                        <div class="login__check">
+                            <input class="login__checkbox" id="password" name="password" type="checkbox">
+                            <label class="login__campo--checkbox" for="">Recordar usuario y contraseña</label>
+                        </div>
+                        <!-- Lo realizo con un link ya que no se puede validar el form sin JS -->
+                        <a class="login__button" href="../index.html">Iniciar Sesion</a>
+                        <a class="login__question" href="#">¿Olvidaste tu usuario o contraseña?</a>
+                        <p class="login__or">o iniciar sesion con</p>
+                        <div class="login__redes">
+                            <button class="login__google"><svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-brand-google" width="20" height="20"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M17.788 5.108a9 9 0 1 0 3.212 6.892h-8" />
+                                </svg><span>Google</span></button>
+                        </div>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
