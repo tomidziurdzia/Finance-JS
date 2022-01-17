@@ -149,36 +149,39 @@ body {
   display: none;
 }
 
-.user__ul {
-  display: none;
+.user__menu__icon {
+  position: relative;
+  margin: auto 0;
 }
 
-.header__user input:checked ~ .user__ul {
-  width: 20rem;
-  position: fixed;
-  right: 0.5rem;
-  top: 8rem;
-  display: inline-block;
-  border-radius: 10px;
+.user__menu__icon svg {
+  cursor: pointer;
+}
+
+.user__menu ul {
   background-color: var(--blue);
-}
-.header__user input:checked ~ .user__ul li {
-  display: flex;
   width: 100%;
-  padding: 1rem;
-  border-bottom: 1px solid var(--blanco);
+  max-width: 22.5rem;
+  position: absolute;
+  top: 6rem;
+  border-radius: 10px;
 }
 
-.user__ul li a {
-  width: 100%;
-  color: white;
+.user__item a {
+  color: var(--blanco);
+  display: block;
+  height: 5rem;
   font-size: 1.5rem;
+  cursor: pointer;
+  border-bottom: 1px solid var(--blanco);
+  padding: 1rem 2rem;
 }
 
-.user__ul li a:hover {
-  width: 100%;
-  color: white;
+.user__item a:hover {
   font-size: 1.7rem;
+}
+.active {
+  transform: translateY(-300px);
 }
 
 /* Fin User */
@@ -371,7 +374,7 @@ body {
   100% {
     opacity: 1;
   }
-}   
+}
 .grafico__circulo:hover {
   transition: 2s;
   transform: rotate(360deg);
@@ -563,7 +566,7 @@ body {
 
 .table__container th,
 .table__container td {
-  padding: .8rem 1.5rem;
+  padding: 0.8rem 1.5rem;
 }
 
 .table__container tbody tr:nth-of-type(even) {
@@ -906,7 +909,8 @@ body {
   .informe__boxes {
     grid-template-columns: 1fr;
   }
-  .table__container__cuenta .buttons__table,  .table__container__categoria .buttons__table {
+  .table__container__cuenta .buttons__table,
+  .table__container__categoria .buttons__table {
     flex-direction: column;
   }
   .login__header {
