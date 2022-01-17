@@ -854,6 +854,104 @@ body {
 .login__google svg {
   margin-right: 0.5rem;
 }
+
+/* FORMULARIO CUENTA MODAL */
+.modal-form__cuenta {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #e2e2e2bd;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s;
+}
+
+.modal-form--show {
+  opacity: 1;
+  pointer-events: unset;
+  transition: opacity 0.4s;
+}
+
+.cuenta__container {
+  margin: auto;
+  width: 90%;
+  max-width: 600px;
+  max-height: 90%;
+  background-color: var(--blanco);
+  border-radius: 10px;
+  padding: 3rem;
+  line-height: 1.5;
+}
+
+.modal-form__title {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.modal-form__form-cuenta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-form__label--nombre-cuenta,
+.modal-form__label--moneda {
+  font-size: 2rem;
+  display: block;
+  margin-top: 1rem;
+}
+
+.modal-form__input,
+.modal-form__select {
+  font-size: 1.5rem;
+  display: block;
+  width: 25rem;
+  padding: 0.5rem 1rem 0.5rem 0;
+}
+
+.cripto__p {
+  width: 25rem;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+
+.form__cuenta__botones {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.modal-form__crear,
+.modal-form__cerrar {
+  margin: 3rem 0;
+  width: 18rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--blanco);
+  border-radius: 10px;
+  border: 1px solid;
+  transition: background-color 0.3s;
+}
+
+.modal-form__crear {
+  background-color: var(--green);
+}
+.modal-form__cerrar {
+  background-color: var(--red);
+}
+
+.modal-form__crear:hover {
+  color: var(--green);
+  background-color: var(--blanco);
+}
+.modal-form__cerrar:hover {
+  color: var(--red);
+  background-color: var(--blanco);
+}
+
 /* INICIO @media only screen and (max-width: 480px) */
 @media only screen and (max-width: 480px) {
   .header__container {

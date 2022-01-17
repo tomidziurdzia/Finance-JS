@@ -123,7 +123,7 @@
         <!-- Boton de nuevas cuents y categorias -->
         <div class="botones__cuentasYCategorias">
             <div class="boton__nueva--cuenta">
-                <a href="#">+ Nueva Cuenta</a>
+                <a id="nueva__cuenta" href="#">+ Nueva Cuenta</a>
             </div>
 
             <div class="boton__nueva--categoria">
@@ -603,6 +603,30 @@
     </footer>
     <!-- Fin Footer -->
     <a href="#" class="boton__mas container">+</a>
+
+    <!-- Modal para añadir nueva cuenta -->
+    <section id="modal-cuenta" class="modal-form__cuenta">
+        <div class="cuenta__container">
+            <h2 class="modal-form__title">Añadir Cuenta</h2>
+            <form class="modal-form__form-cuenta" action="">
+                <label class="modal-form__label--nombre-cuenta" for="">Nombre Cuenta</label>
+                <input class="modal-form__input" type="text" name="" id="">
+                <label class="modal-form__label--moneda" for="">Moneda de la Cuenta</label>
+                <select class="modal-form__select" name="" id="">
+                    <option value="">Pesos</option>
+                    <option value="">Dolares</option>
+                    <option value="">Bitcoin</option>
+                    <option value="">Criptomonedas</option>
+                </select>
+                <p class="cripto__p">Si selecciona "Criptomonedas" se abrira una ventana para ingresar par (ejemplo:
+                    ETH/BTC)</p>
+            </form>
+            <div class="form__cuenta__botones">
+                <a id="modal-form__crear" href="#" class="modal-form__crear">Aceptar</a>
+                <a id="modal-form__cerrar" href="#" class="modal-form__cerrar">Cerrar Formulario</a>
+            </div>
+        </div>
+    </section>
     <script src="../js/app.js"></script>
 </body>
 
