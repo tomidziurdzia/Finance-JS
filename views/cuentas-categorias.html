@@ -127,7 +127,7 @@
             </div>
 
             <div class="boton__nueva--categoria">
-                <a href="#">+ Nueva Categoria</a>
+                <a id="nueva__categoria" href="#">+ Nueva Categoria</a>
             </div>
         </div>
 
@@ -604,7 +604,7 @@
     <!-- Fin Footer -->
     <a href="#" class="boton__mas container">+</a>
 
-    <!-- Modal para añadir nueva cuenta -->
+    <!-- Inicio Modal para añadir nueva cuenta -->
     <section id="modal-cuenta" class="modal-form__cuenta">
         <div class="cuenta__container">
             <h2 class="modal-form__title">Añadir Cuenta</h2>
@@ -622,11 +622,38 @@
                     ETH/BTC)</p>
             </form>
             <div class="form__cuenta__botones">
-                <a id="modal-form__crear" href="#" class="modal-form__crear">Aceptar</a>
-                <a id="modal-form__cerrar" href="#" class="modal-form__cerrar">Cerrar Formulario</a>
+                <a id="modal-form__crear-cuenta" href="#" class="modal-form__crear">Aceptar</a>
+                <a id="modal-form__cerrar-cuenta" href="#" class="modal-form__cerrar">Cerrar Formulario</a>
             </div>
         </div>
     </section>
+    <!-- Fin Modal para añadir nueva cuenta -->
+    <!-- Inicio Modal para añadir nueva Categoria -->
+    <section id="modal-categoria" class="modal-form__categoria">
+        <div class="categoria__container">
+            <h2 class="modal-form__title">Añadir Categoria</h2>
+            <form action="" class="modal-form__form-categoria">
+                <label class="modal-form__label--nombre-categoria" for="">Nombre Categoria</label>
+                <input class="modal-form__input" type="text" name="" id="">
+                <label class="modal-form__label--moneda" for="">Tipo de Categoria</label>
+                <select class="modal-form__select" name="" id="">
+                    <option value="">Ingreso</option>
+                    <option value="">Egreso</option>
+                    <option value="">Ambas</option>
+                </select>
+                <label class="modal-form__label--moneda" for="">Moneda de la Categoria</label>
+                <select class="modal-form__select" name="" id="">
+                    <option value="">Pesos</option>
+                    <option value="">Dolares</option>
+                </select>
+            </form>
+            <div class="form__categoria__botones">
+                <a id="modal-form__crear-categoria" href="#" class="modal-form__crear">Aceptar</a>
+                <a id="modal-form__cerrar-categoria" href="#" class="modal-form__cerrar">Cerrar Formulario</a>
+            </div>
+        </div>
+    </section>
+    <!-- Fin Modal para añadir nueva Categoria -->
     <script src="../js/app.js"></script>
 </body>
 

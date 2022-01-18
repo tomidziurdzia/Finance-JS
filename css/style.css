@@ -856,7 +856,7 @@ body {
 }
 
 /* FORMULARIO CUENTA MODAL */
-.modal-form__cuenta {
+.modal-form__cuenta, .modal-form__categoria {
   position: fixed;
   top: 0;
   left: 0;
@@ -875,7 +875,7 @@ body {
   transition: opacity 0.4s;
 }
 
-.cuenta__container {
+.cuenta__container, .categoria__container {
   margin: auto;
   width: 90%;
   max-width: 600px;
@@ -891,13 +891,14 @@ body {
   font-size: 2.5rem;
 }
 
-.modal-form__form-cuenta {
+.modal-form__form-cuenta, .modal-form__form-categoria {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .modal-form__label--nombre-cuenta,
+.modal-form__label--nombre-categoria,
 .modal-form__label--moneda {
   font-size: 2rem;
   display: block;
@@ -918,7 +919,7 @@ body {
   font-size: 1.2rem;
 }
 
-.form__cuenta__botones {
+.form__cuenta__botones, .form__categoria__botones {
   display: flex;
   justify-content: space-evenly;
 }
