@@ -1036,6 +1036,14 @@ body {
   .login__grafico {
     display: none;
   }
+  .modal-form__crear,
+  .modal-form__cerrar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    width: 40%;
+}
 }
 /* FIN @media only screen and (max-width: 480px) */
 
