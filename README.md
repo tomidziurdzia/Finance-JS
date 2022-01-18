@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Tomas Dziurdzia</h1>
 <h3 align="center">A passionate fullstack developer from Argentina</h3>
 
-- 🔭 I’m currently working on Finance-JS https://tomidziurdzia.github.io/Finance-JS/
+- 🔭 I’m currently working on [Finance-JS] (https://tomidziurdzia.github.io/Finance-JS/)
 
 - 👨‍💻 All of my projects are available at [https://github.com/tomidziurdzia?tab=repositories](https://github.com/tomidziurdzia?tab=repositories)
 
