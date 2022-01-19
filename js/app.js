@@ -35,4 +35,3 @@ btnCerrarFormCategoria.addEventListener("click", (e) => {
   e.preventDefault();
   modalCategoria.classList.remove("modal-form--show");
 });
-
